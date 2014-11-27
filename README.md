@@ -1,5 +1,7 @@
 # svg_fallback
 
+[![Gem Version](https://badge.fury.io/rb/svg_fallback.svg)](http://badge.fury.io/rb/svg_fallback)
+
 Using svg files is nice. What's not nice however is having to comply with Internet Explorer 8 and below when using svg files.
 
 svg_fallback provides a wrapper to image_tag that detects the user's browser and if it is incompatible with svg files it will fallback to a compatible filetype.
