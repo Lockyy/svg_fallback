@@ -4,7 +4,7 @@ module SVGFallbackHelper
 
   def svg_fallback_tag path, options = {}
     extension = 'svg'
-    if browser.name == 'Internet Explorer' && browser.version >= 8
+    unless browser.modern?
       if options[:fallback_extension]
         extension = options[:fallback_extension]
         options.delete :fallback_extension
